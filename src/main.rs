@@ -1,3 +1,8 @@
+use fluids::*;
+
 fn main() {
-    println!("Hello, world!");
+    let mut cont = Container::new_random();
+    println!("created container, starting simulation...");
+    cont.run(1.);
+    println!("simulation finished...");
 }
